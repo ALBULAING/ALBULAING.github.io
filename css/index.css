@@ -2649,8 +2649,8 @@ i.anzhiyu-icon-hashtag {
   font-size: 13px;
 }
 .icon {
-  width: 20px; /* 修改为 20px */
-  height: 20px; /* 修改为 20px */
+  width: 2em; /* 修改为 20px */
+  height: 2em; /* 修改为 20px */
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
