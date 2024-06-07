@@ -2648,6 +2648,13 @@ i.anzhiyu-icon-hashtag {
   filter: alpha(opacity=60);
   font-size: 13px;
 }
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 :root {
   --animation-on: cubic-bezier(0.6, 0.1, 0, 1);
   --animation-in: cubic-bezier(0.6, 0.2, 0.25, 1);
