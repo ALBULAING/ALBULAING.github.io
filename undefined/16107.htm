@@ -203,7 +203,7 @@ function AddRewardMask() {
         if (!ele) return
         twikoo.getCommentsCount({
             envId: 'https://tulip.us.kg/',
-            region: '',
+            region: 'ap-shangha',
             urls: [window.location.pathname],
             includeReply: false
         }).then(res => {
@@ -216,7 +216,7 @@ function AddRewardMask() {
         twikoo.init(Object.assign({
             el: '#twikoo-wrap',
             envId: 'https://tulip.us.kg/',
-            region: '',
+            region: 'ap-shangha',
             path: window.location.pathname,
             onCommentLoaded: () => {
                 GLOBAL_CONFIG.lightbox && utils.lightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
