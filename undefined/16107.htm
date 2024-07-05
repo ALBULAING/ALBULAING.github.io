@@ -221,8 +221,8 @@ function AddRewardMask() {
     async function loadWaline() {
         if (walineInitFunction) initWaline(walineInitFunction)
         else {
-            await utils.getCSS('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/waline/1.5.4/Waline.min.js')
-            const {init} = await import('https://cdnjs.cloudflare.com/ajax/libs/waline/3.2.1/waline.min.js')
+            await utils.getCSS('https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.css')
+            const {init} = await import('https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.js')
             walineInitFunction = init || Waline.init
             initWaline(walineInitFunction)
             window.walineFn = walineInitFunction
