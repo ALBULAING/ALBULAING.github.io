@@ -202,7 +202,7 @@ document.addEventListener('pjax:complete', () => {
         if (walineInitFunction) initWaline(walineInitFunction)
         else {
             await utils.getCSS('https://cdnjs.cloudflare.com/ajax/libs/waline/3.2.1/waline.min.css')
-            const {init} = await import('https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.js')
+            const {init} = await import('https://cdnjs.cloudflare.com/ajax/libs/waline/3.2.1/waline.min.js')
             walineInitFunction = init || Waline.init
             initWaline(walineInitFunction)
             window.walineFn = walineInitFunction
