@@ -177,7 +177,7 @@ sco.changeTimeFormat(document.querySelectorAll('.bber-info-time time'))</script>
         if (walineInitFunction) initWaline(walineInitFunction)
         else {
             await utils.getCSS('https://cdnjs.cloudflare.com/ajax/libs/waline/3.2.7/waline.min.css')
-            const {init} = await import('https://cdnjs.cloudflare.com/ajax/libs/waline/3.2.7/waline.min.js')
+            const {init} = await import('https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/comment.js')
             walineInitFunction = init || Waline.init
             initWaline(walineInitFunction)
             window.walineFn = walineInitFunction
