@@ -192,7 +192,7 @@ function AddRewardMask() {
         const ele = document.querySelectorAll('.twikoo-count')
         if (!ele) return
         twikoo.getCommentsCount({
-            envId: 'https://cool.idv.rw/',
+            envId: 'https://aliangtwikoo.netlify.app/.netlify/functions/twikoo',
             region: '',
             urls: [window.location.pathname],
             includeReply: false
@@ -205,7 +205,7 @@ function AddRewardMask() {
     const init = () => {
         twikoo.init(Object.assign({
             el: '#twikoo-wrap',
-            envId: 'https://cool.idv.rw/',
+            envId: 'https://aliangtwikoo.netlify.app/.netlify/functions/twikoo',
             region: '',
             path: window.location.pathname,
             onCommentLoaded: () => {
@@ -235,14 +235,14 @@ function AddRewardMask() {
     }
 })()
 </script><script>async function barrageTwikoo() {
-    await fetch("https://cool.idv.rw/", {
+    await fetch("https://aliangtwikoo.netlify.app/.netlify/functions/twikoo", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
             event: "COMMENT_GET",
-            accessToken: "c3a4b80ebdf746b08e7baf7f16be8dee",
+            accessToken: "",
             url: window.location.pathname
         })
     }).then(async res => {
