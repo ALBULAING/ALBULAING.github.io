@@ -6283,6 +6283,18 @@ span.tags-punctuation {
 #home {
   order: 1;
 }
+.hot-tip {
+  display: flex;
+  color: var(--efu-red);
+  font-size: 0.5rem;
+  position: relative;
+  margin-right: 8px;
+  align-items: center;
+  gap: 1px;
+}
+.hot-tip i {
+  font-size: 10px;
+}
 #category #category-bar {
   padding: 0;
   border: none;
