@@ -3093,7 +3093,7 @@ span.tags-punctuation::before {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("/img/pwa/favicon.ico") center center no-repeat;
+  background: url("") center center no-repeat;
   content: '';
   background-size: cover;
   transition: 0.2s cubic-bezier(0.45, 0.04, 0.43, 1.21);
@@ -3125,7 +3125,7 @@ span.tags-punctuation::before {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: url("https://p.zhheo.com/sgDgtu21290781690197072717.png!cover") center center no-repeat;
+  background: url("https://p3-sign.toutiaoimg.com/tos-cn-i-eyfl5e3fp8/9c0ba3f9e623406f91bcda1b7b71e521~tplv-obj.image?lk3s=993df49e&traceid=202408031811399B49A8162A0E98BACBCC&x-expires=2147483647&x-signature=o0w6UNUAXsk1G1Wjk25rgqLyIAY%3D") center center no-repeat;
   background-size: 100%;
 }
 #aside-content .card-widget.card-platform #flip-wrapper #flip-content .face.back {
@@ -3133,7 +3133,7 @@ span.tags-punctuation::before {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   box-sizing: border-box;
-  background: url("https://p.zhheo.com/akOubd23890681718271458681.png!cover") center center no-repeat;
+  background: url("https://p3-sign.toutiaoimg.com/tos-cn-i-eyfl5e3fp8/289ead9540cd4d42ab64ac7df3e33673~tplv-obj.image?lk3s=993df49e&traceid=202408031811399B49A8162A0E98BACBCC&x-expires=2147483647&x-signature=WPT0QLz2CUnYba6AtwXBHazkhJU%3D") center center no-repeat;
   background-size: 100%;
 }
 #aside-content .card-widget.card-adsense {
@@ -5002,6 +5002,11 @@ span.tags-punctuation::before {
     left: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  #nav-console {
+    display: none;
+  }
+}
 span.tags-punctuation {
   display: flex;
   align-items: center;
@@ -5855,6 +5860,23 @@ span.tags-punctuation {
 }
 #sidebar #toggle-sidebar {
   bottom: 80px;
+}
+#universe {
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+[data-theme=light] #universe {
+  display: none;
 }
 #home_top {
   max-width: 1400px;
