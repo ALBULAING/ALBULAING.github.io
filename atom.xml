@@ -6,7 +6,7 @@
   <link href="https://cool.com.mp/atom.xml" rel="self"/>
   
   <link href="https://cool.com.mp/"/>
-  <updated>2024-08-22T22:38:48.318Z</updated>
+  <updated>2024-08-22T22:38:48.321Z</updated>
   <id>https://cool.com.mp/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>欢迎来到阿凉的网站</title>
+    <link href="https://cool.com.mp/posts/5a6a9181.html"/>
+    <id>https://cool.com.mp/posts/5a6a9181.html</id>
+    <published>2024-06-14T11:56:02.000Z</published>
+    <updated>2024-08-22T22:38:48.321Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hai</title>
@@ -31,19 +44,6 @@
     <summary type="html">&lt;hr&gt;
 &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a</summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>欢迎来到阿凉的网站</title>
-    <link href="https://cool.com.mp/posts/5a6a9181.html"/>
-    <id>https://cool.com.mp/posts/5a6a9181.html</id>
-    <published>2024-06-14T11:56:02.000Z</published>
-    <updated>2024-08-22T22:38:48.321Z</updated>
-    
     
     
     
