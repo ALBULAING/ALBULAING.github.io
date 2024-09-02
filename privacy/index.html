@@ -258,35 +258,83 @@ document.addEventListener('pjax:complete', () => {
 </ul>
 <h3 id="第三方信息获取方将您的数据用于以下用途："><a href="#第三方信息获取方将您的数据用于以下用途：" class="headerlink" title="第三方信息获取方将您的数据用于以下用途："></a>第三方信息获取方将您的数据用于以下用途：</h3><p>&emsp;&emsp;第三方可能会用于其他目的，详情请访问对应第三方服务提供的隐私协议。</p>
 <h3 id="你应该知道在你访问的时候不限于以下信息会被第三方获取并使用："><a href="#你应该知道在你访问的时候不限于以下信息会被第三方获取并使用：" class="headerlink" title="你应该知道在你访问的时候不限于以下信息会被第三方获取并使用："></a>你应该知道在你访问的时候不限于以下信息会被第三方获取并使用：</h3><p>&emsp;&emsp;第三方部分为了抵抗攻击、使用不同节点 cdn 加速等需求会收集不限于以下信息</p>
-<div class="table-wrap">
-  <table>
+<!-- 在表格中添加 id 以便于通过 JavaScript 获取元素 -->
+<table>
     <thead>
-      <tr>
-        <th>类型<div style="width:100px"></div></th><th>信息</th>
-      </tr>
+    <tr>
+        <th>类型</th>
+        <th>信息</th>
+    </tr>
     </thead>
     <tbody>
-      <tr>
-        <td td="" colspan="2"><b>网络信息</b></td>
-      </tr>
-      <tr>
-        <td>IP地址</td><td><strong id="userAgentIp"></strong></td>
-      </tr>
-      <tr>
-        <td>城市</td><td><strong id="userAgentCity"></strong></td>
-      </tr>
-      <tr>
-        <td td="" colspan="2"><b>设备信息</b></td>
-      </tr>
-      <tr>
-        <td>系统</td><td><strong id="userAgentOs"></strong></td>
-      </tr>
+    <tr>
+        <td colspan="2"><b>网络信息</b></td>
+    </tr>
+    <tr>
+        <td>IP地址</td>
+        <td><div id="userAgentIp"></div></td>
+    </tr>
+    <tr>
+        <td>州/大陆</td>
+        <td><div id="userAgentState"></div></td>
+    </tr>
+    <tr>
+        <td>国家</td>
+        <td><div id="userAgentCountry"></div></td>
+    </tr>
+    <tr>
+        <td>省份</td>
+        <td><div id="userAgentProv"></div></td>
+    </tr>
+    <tr>
+        <td>城市</td>
+        <td><div id="userAgentCity"></div></td>
+    </tr>
+    <tr>
+        <td>运营商</td>
+        <td><div id="userAgentISP"></div></td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>设备信息</b></td>
+    </tr>
+    <tr>
+        <td>设备</td>
+        <td><div id="userAgentDevice"></div></td>
+    </tr>
     </tbody>
-  </table>
-  <div style="color:var(--anzhiyu-gray);font-size:14px">
-    此页面如果未能获取到信息并不代表无法读取上述信息，以实际情况为准。
-  </div>  
-</div>
+</table>
+
+<!-- 在模板文件中添加 JavaScript 代码 -->
+<script>
+    // 获取ip
+    function getIpInfo(){
+        var fetchUrl = "https://api.76.al/api/ipv4/query?key=fiFFk1WQLNPpEkaiNmxol2QXzG"  //key申请：https://api.76.al
+        fetch(fetchUrl)
+        .then(res => res.json())
+        .then(json =>{
+            var country = json.data.country || "未能获取到信息";
+            var ip = json.data.ip || "未能获取到信息";
+            var province = json.data.province || "未能获取到信息";
+            var city = json.data.city || "未能获取到信息";
+            var districts = json.data.districts || "未能获取到信息"
+            var isp = json.data.isp || "未能获取到信息";
+    
+            document.getElementById("userAgentIp").innerHTML = ip;
+            document.getElementById("userAgentCountry").innerHTML = country;
+            document.getElementById("userAgentProv").innerHTML = province;
+            document.getElementById("userAgentCity").innerHTML = city;
+            document.getElementById("userAgentISP").innerHTML = isp;
+    
+            // 使用ua-parser-js解析User-Agent
+            var parser = new UAParser();
+            var result = parser.getResult();
+            document.getElementById("userAgentOS").innerHTML = result.os.name + " " + result.os.version;
+            document.getElementById("userAgentBrowser").innerHTML = result.browser.name + " " + result.browser.version;
+        })
+    }
+    
+    getIpInfo()
+</script>
 
 
 <h2 id="二、在评论时如何收集和使用你的个人信息"><a href="#二、在评论时如何收集和使用你的个人信息" class="headerlink" title="二、在评论时如何收集和使用你的个人信息"></a>二、在评论时如何收集和使用你的个人信息</h2><p>&emsp;&emsp;评论使用的是无登陆系统的匿名评论系统，你可以自愿填写真实的、或者虚假的信息作为你评论的展示信息。<br>&emsp;&emsp;<code>鼓励你使用不易被人恶意识别的昵称进行评论</code>，但是建议你填写<code>真实的邮箱</code>以便收到回复（邮箱信息不会被公开）。<br>&emsp;&emsp;在你评论时，会额外收集你的个人信息。</p>
