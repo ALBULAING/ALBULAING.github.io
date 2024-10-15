@@ -1,14 +1,7 @@
 ---
 title: 订阅本站
 date: 2023-10-01 12:00:00
-tags: [订阅, 博客]
 ---
-
-<div id="toggle-menu">
-    <a class="site-page">
-        <i class="heoblogIcon icon-menu-fill"></i>
-    </a>
-</div>
 
 ## 订阅本站
 
@@ -22,8 +15,14 @@ tags: [订阅, 博客]
 
 ### 订阅方式
 
+<div id="toggle-menu">
+    <a class="site-page">
+        <i class="heoblogIcon icon-menu-fill"></i>
+    </a>
+</div>
+
 <div class="rss-plan-list">
-    <a class="rss-plan-item rss-plan-wechat" href="/wechatOA/" title="公众号" target="_blank">
+    <a class="rss-plan-item rss-plan-wechat" href="/WeChatOA/" title="公众号" target="_blank">
         <div class="rss-plan-description">
             推送精选文章<br>推送全文
         </div>
