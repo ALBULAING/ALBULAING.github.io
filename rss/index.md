@@ -1,6 +1,7 @@
 ---
 title: 订阅
 date: 2024-10-15 13:29:48
+type: banner
 tags:
 ---
 # 订阅本站
