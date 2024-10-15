@@ -1,6 +1,11 @@
 ---
-title: 订阅本站
-date: 2023-10-01 12:00:00
+title: 友链鱼塘
+desc: 最新文章订阅
+type: banner
+cover: https://ooo.0x0.ooo/2024/10/15/ODZdsG.png
+leftend: 使用 友链朋友圈 订阅友链最新文章
+excerpt: false
+date: 2024-09-08 20:36:26
 ---
 
 ## 订阅本站
