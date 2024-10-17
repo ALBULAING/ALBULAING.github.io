@@ -323,6 +323,47 @@ img.rss-plan-icon {
 .rss-plan-info {
     width: fit-content;
     opacity: .6
+}
+.layout#content-inner {
+    max-width: 1400px;
+    gap: .5rem;
+    margin-top: .5rem
+}
+
+.layout#content-inner p img {
+    margin: auto
+}
+.layout.hide-aside {
+    max-width: 1400px
+}
+@media screen and (min-width: 900px) {
+    html.hide-aside .layout {
+        -webkit-box-pack:center;
+        justify-content: center
+    }
+
+    html.hide-aside .layout>.aside-content {
+        display: none
+    }
+
+    html.hide-aside .layout>div:first-child {
+        width: 100%
+    }
+}
+.layout.hide-aside>div {
+    width: 100%!important
+}
+.layout#content-inner {
+    max-width: 1400px;
+    gap: .5rem;
+    margin-top: .5rem
+}
+
+.layout#content-inner p img {
+    margin: auto
+}
+#page {
+    box-shadow: none
 }          
             
 </style> 
