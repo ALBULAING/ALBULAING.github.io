@@ -258,7 +258,7 @@ document.addEventListener('pjax:complete', () => {
 }
 
 .rss-plan-item {
-    border-radius: 12px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -329,7 +329,11 @@ img.rss-plan-icon {
 .rss-plan-list .rss-plan-item {
     border-bottom: none !important; /* 强制覆盖 border-bottom */
 }
-
+/* 移除所有可能导致悬停变色的样式 */
+.rss-plan-item:hover {
+    filter: none;
+    brightness: 1;
+}
 
 </style>
 
