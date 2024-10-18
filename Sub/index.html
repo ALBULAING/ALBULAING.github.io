@@ -326,13 +326,16 @@ img.rss-plan-icon {
     filter: blur(0);
     opacity: 1;
 }
+#article-container a {
+    color: var(--efu-fontcolor);
+    border-bottom: 2px dotted var(--efu-lighttext);
+    font-weight: 700;
+}
+
 .rss-plan-list .rss-plan-item {
-    border-bottom: none !important; /* 强制覆盖 border-bottom */
+    border-radius: 20px; /* 只在 rss-plan-list 中应用 */
 }
-.rss-plan-item:hover {
-    filter: none !important;
-    brightness: 1 !important;
-}
+
 
 </style>
 
