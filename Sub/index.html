@@ -258,7 +258,7 @@ document.addEventListener('pjax:complete', () => {
 }
 
 .rss-plan-item {
-    border-radius: 12px!important;/* 强制覆盖 border-bottom */
+    border-radius: px!important;/* 强制覆盖 border-bottom */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -326,16 +326,9 @@ img.rss-plan-icon {
     filter: blur(0);
     opacity: 1;
 }
-#article-container a {
-    color: var(--efu-fontcolor);
-    border-bottom: 2px dotted var(--efu-lighttext);
-    font-weight: 700;
-}
-
 .rss-plan-list .rss-plan-item {
-    border-radius: 20px; /* 只在 rss-plan-list 中应用 */
+    border-bottom: none !important; /* 强制覆盖 border-bottom */
 }
-
 
 </style>
 
