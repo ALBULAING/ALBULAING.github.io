@@ -270,6 +270,23 @@ document.addEventListener('pjax:complete', () => {
     width: calc(33.33% - 8px);
     transition: .3s;
 }
+.rss-plan-item:hover {
+    background-color: transparent !important; /* 确保悬停时背景透明 */
+    filter: brightness(1.1); /* 提高亮度 */
+}
+
+.rss-plan-item.rss-plan-wechat:hover {
+    background: #2aa124 !important; /* 悬停时的颜色 */
+}
+
+.rss-plan-item.rss-plan-mail:hover {
+    background: #3b4ed0 !important; /* 悬停时的颜色 */
+}
+
+.rss-plan-item.rss-plan-rss:hover {
+    background: #d68a00 !important; /* 悬停时的颜色 */
+}
+
 
 @media screen and (max-width: 1024px) {
     .rss-plan-item {
