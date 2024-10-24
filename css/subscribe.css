@@ -33,7 +33,7 @@
     justify-content: space-between;
     min-width: 240px;
     height: 240px;
-    margin: 6px;
+    margin: 4px;
     overflow: hidden;
     text-decoration: none;
     width: calc(33.33% - 8px);
@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 1024px) {
     .rss-plan-item {
-        width: calc(100% / 2 - 4px);
+        width: 100%;
         margin: 4px 0;
     }
 }
@@ -144,4 +144,10 @@ a {
 
 .rss-plan-item.rss-plan-rss:hover {
     background: #d68a00; /* 悬停时的颜色 */
+}
+
+@media screen and (max-width: 768px) {
+  .rss-plan-item {
+      width:100%
+  }
 }
