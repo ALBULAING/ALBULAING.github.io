@@ -36,7 +36,7 @@
     margin: 6px;
     overflow: hidden;
     text-decoration: none;
-    width: calc(100% / 3 - 8px);
+    width: calc(33.33% - 8px);
     transition: .3s;
 }
 .rss-plan-item:hover {
@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 1024px) {
     .rss-plan-item {
-        width: 100%;
+        width: calc(100% / 2 - 4px);
         margin: 6px 0;
     }
 }
