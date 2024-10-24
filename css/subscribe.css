@@ -60,7 +60,7 @@
 @media screen and (max-width: 1024px) {
     .rss-plan-item {
         width: calc(100% / 2 - 4px);
-        margin: 6px 0;
+        margin: 4px 0;
     }
 }
 
